@@ -1,0 +1,29 @@
+main{
+    display: flex; /* Flex för att ordna innehållet i main */
+    flex-direction: column; /* Ändrar riktningen på flex till en kolumn (vertikal) */
+    gap: 2em; /* Skapar ett avstånd mellan elementen */
+}
+
+article{
+    max-width: 650px; /* Begränsar bredden på varje artikel, blir annars oläsbar på stora skärmar */
+    padding: 1em;
+    display: flex; /* Flex för artiklar */
+    flex-direction: column; /* Ändrar riktningen på flex till en kolumn */
+    gap: 1em; /* Skapar ett avstånd mellan elementen */
+    background-color: #D8D2C2;
+    border: 2px #4A4947 solid;
+}
+
+article img{
+    object-fit: cover; /* Bilder anpassas för att inte ändra bildförhållande vid ändrad storlek */
+    width: 200px; /* Bredd på bilderna */
+    height: 120px; /* Höjd på bilderna */
+    border: 2px black solid;
+}
+
+/* Ger paragrafer padding och färg. Ökad läsbarhet */
+article p{
+    padding: 0.5em;
+    background-color: #FAF7F0;
+    border: 2px black solid;
+}

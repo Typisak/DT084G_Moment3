@@ -1,0 +1,128 @@
+/* Gemensam CSS för alla sidor */
+
+/* Tar bort automatiska padding- och marginvärden. Underlättar vid egen anpassning. */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Ger sidorna bakgrundsfärg, typsnitt, textstorlekar och radhöjd */
+body{
+    background-color: #FAF7F0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    font-size: calc(12px + 0.390625vw);
+    /* Responsiv textinställning: https://matthewjamestaylor.com/responsive-font-size */
+}
+
+/* Ger sidan utrymme på kanterna för att bland annat göra text mer läsbar. (Hamnar annars mot kanten) */
+#wrapper{
+    padding: 2em;
+}
+
+/* Tar bort punkter från alla listor. */
+ul{
+    list-style: none;
+}
+
+/* Header */
+
+/* Ger header bakgrundsbild som täcker hela ytan utan att repeteras (flera av samma bild) */
+header{
+    width: fit-content;
+    background-image: url("../images/bild1.jpg");
+    padding: 1em;
+    background-size: cover;
+    border: 2px #4A4947 solid;
+}
+
+/* Ger introduktions-segmentet sitt utseende. Blir inte bredare än sitt innehåll. */
+#introContainer{
+    width: fit-content;
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 1em;
+    /* rgba gör det möjligt att ställa in opacity */
+    background-color: rgba(255, 255, 255, 0.8);   
+}
+
+#introContainer h1{
+    margin-bottom: 0.3em;
+}
+
+/* Navigationsmenyn följer med när användaren skrollar. Stannar vid botten på header. */
+header nav{
+    position: sticky;
+    top: 10px;
+}
+
+/* Ger navigationsmenyns länklista styling med flexbox */
+header ul{
+    width: max-content; /* Bredd blir inte mindre än innehållets största bredd, det vill säga att text får 
+    ta upp tillräcklig plats för att inte wrappa */
+    background-color: #D8D2C2;
+    border: 2px #4A4947 solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+/* Ger listobjekten (innehållande navigationslänkar) en bakgrundsfärg för indikera att dessa hovras över. */
+nav li:hover{
+    background-color: #B17457;
+}
+
+/* Ger navigationsknapparna sitt utseende. Flexbox nyttjas för centrering av text */
+header a{
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+/* Ger navigationslänkar andra utseenden när de besökts eller aktiveras */
+nav a:visited{
+    color: green;
+}
+
+nav a:active{
+    filter: brightness(140%);
+}
+
+/* Förhindrar att hem-knappen blir för stor. */
+nav img{
+    max-width: 2em;
+}
+
+/* Ger listföremålet för bilder en relativ position, tillåter positionering av barn. */
+#imagesButton{
+    position: relative;
+}
+
+/* Dropdown-menyn är osynlig som standard, ges position: absolute för att visas under navigationsmenyn. */
+.dropDown{
+    display: none;
+    position: absolute;
+}
+
+/* Om dropdown-menyns listföremål hovras över visas listan med underkategorier */
+#imagesButton:hover .dropDown{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main */
+/* Distanserar main från header för ökad läsbarhet */
+main{
+    margin-top: 2em;
+}
+
+/* Footer */
+/* Distanserar footer från main för ökad läsbarhet */
+footer{
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+}

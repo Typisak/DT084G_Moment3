@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv"> <!-- Anger att HTML-dokumentet är skrivet på svenska -->
+<head>
+    <meta charset='utf-8'> <!-- Definierar teckenkodningen som UTF-8 -->
+    <title>Bilder 2</title> <!-- Titel på sidan som visas i webbläsarens flik -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!-- Gör sidan responsiv genom att justera visningen baserat på enhetens bredd -->
+    <link rel='stylesheet' type='text/css' href='style/main.css'> <!-- Länkar till en extern CSS-fil -->
+    <link rel='stylesheet' type='text/css' href='style/pictures.css'> <!-- Länkar till en extern CSS-fil -->
+</head>
+
+<body>
+    <div id="wrapper"> <!-- Wrapper-div för att hålla samman allt innehåll -->
+        <header> <!-- Sidhuvud -->
+            <nav> <!-- Navigationsmeny -->
+                <ul> <!-- Lista för menyns länkar -->
+                    <li>
+                        <a href="index.html">
+                            <img src="images/home.png" alt="Hemknapp"> <!-- Bildikon för hemknapp -->
+                        </a>
+                    </li>
+
+                    <li><a href="courses.html">Kurser</a></li> <!-- Länk till kurs-sidan -->
+                    <li><a href="contact.html">Kontakt</a></li> <!-- Länk till kontakt-sidan -->
+                    <li><a href="about.html">Om</a></li> <!-- Länk till om-sidan -->
+
+                    <li id="imagesButton"> <!-- Länk med dropdown för bilder -->
+                        <a href="pictures.html">Bilder</a> <!-- Länk till första bildsidan -->
+                        <ul class="dropDown"> <!-- Dropdown-meny (se CSS-dokument för funktionalitet) -->
+                            <li><a href="pictures2.html">Bilder 2</a></li> <!-- Länk till andra bildsidan -->
+                            <li><a href="pictures3.html">Bilder 3</a></li> <!-- Länk till tredje bildsidan -->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="introContainer">    
+                <h1>Bilder 2</h1> <!-- Huvudrubrik -->
+                <p>Nedan finner du ett bildcollage.</p> <!-- Introduktion till sidan -->
+            </div>
+        </header>
+
+        <main> <!-- Huvudinnehåll -->
+
+            <!-- Navigationsmeny för de olika bild-sidorna -->
+            <nav id="pictureNav">
+                <ul>
+                    <li><a href="pictures.html">Bilder</a></li>
+                    <li><a href="pictures2.html">Bilder 2</a></li>
+                    <li><a href="pictures3.html">Bilder 3</a></li>
+                </ul>
+            </nav>
+
+            <!-- Bilder för fotoalbum -->
+            <div id="imageContainer">
+                <img src="images/bild3.jpg" alt="Våfflor med blåbär">
+                <img src="images/bild4.jpg" alt="Kvinna som står i gult fält">
+                <img src="images/bild9.jpg" alt="Två fotgängare går förbi affär">
+            </div>
+        </main>
+
+        <footer> <!-- Sidfot -->
+            <ul> <!-- Lista för sidfotens innehåll -->
+                <li><h4>DT057G</h4></li> <!-- Kurskod -->
+                <li><h5>2024-09-25</h5></li> <!-- Datum -->
+                <li><h5>Isak Ullberg</h5></li> <!-- Namn på författaren -->
+                <li><a href="mailto:isul2300@student.miun.se">isul2300@student.miun.se</a></li> <!-- Mejllänk -->
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

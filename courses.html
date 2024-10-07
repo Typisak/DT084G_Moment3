@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sv"> <!-- Anger att HTML-dokumentet är skrivet på svenska -->
+<head>
+    <meta charset='utf-8'> <!-- Definierar teckenkodningen som UTF-8 -->
+    <title>Kurser</title> <!-- Titel på sidan som visas i webbläsarens flik -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!-- Gör sidan responsiv genom att justera visningen baserat på enhetens bredd -->
+    <link rel='stylesheet' type='text/css' href='style/main.css'> <!-- Länkar till en extern CSS-fil -->
+    <link rel='stylesheet' type='text/css' href='style/courses.css'> <!-- Länkar till en extern CSS-fil -->
+</head>
+
+<body>
+    <div id="wrapper"> <!-- Wrapper-div för att hålla samman allt innehåll -->
+        <header> <!-- Sidhuvud -->
+            <nav> <!-- Navigationsmeny -->
+                <ul> <!-- Lista för menyns länkar -->
+                    <li>
+                        <a href="index.html">
+                            <img src="images/home.png" alt="Hemknapp"> <!-- Bildikon för hemknapp -->
+                        </a>
+                    </li>
+
+                    <li><a href="courses.html">Kurser</a></li> <!-- Länk till kurs-sidan -->
+                    <li><a href="contact.html">Kontakt</a></li> <!-- Länk till kontakt-sidan -->
+                    <li><a href="about.html">Om</a></li> <!-- Länk till om-sidan -->
+
+                    <li id="imagesButton"> <!-- Länk med dropdown för bilder -->
+                        <a href="pictures.html">Bilder</a> <!-- Länk till första bildsidan -->
+                        <ul class="dropDown"> <!-- Dropdown-meny (se CSS-dokument för funktionalitet) -->
+                            <li><a href="pictures2.html">Bilder 2</a></li> <!-- Länk till andra bildsidan -->
+                            <li><a href="pictures3.html">Bilder 3</a></li> <!-- Länk till tredje bildsidan -->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="introContainer">    
+                <h1>Kurser</h1> <!-- Huvudrubrik -->
+                <p>Nedan finner du information gällande kurser.</p> <!-- Introduktion till sidan -->
+            </div>
+        </header>
+
+        <main> <!-- Huvudinnehåll -->
+            <div id="tableContainer">
+                <table> <!-- Första tabellen som visar kurser under första läsåret -->
+                    <thead> <!-- Tabellhuvudet -->
+                        <tr>
+                            <th>Kurskod</th> <!-- Rubrik för kurskoder (första kolumnen) -->
+                            <th>Kursnamn</th> <!-- Rubrik för kursnamn (andra kolumnen) -->
+                            <th>Progression</th> <!-- Rubrik för progression (tredje kolumnen) -->
+                        </tr>
+                    </thead>
+
+                    <tbody> <!-- Tabellens huvudinnehåll -->
+                        <!-- Varje rad innehållande kursdata följer följande format: -->
+                        <tr>
+                            <td>DT057G</td> <!-- Kurskod -->
+                            <td>Webbutveckling I</td> <!-- Kursnamn -->
+                            <td>A</td> <!-- Progression -->
+                        </tr>
+                        <tr>
+                            <td>DT084G</td>
+                            <td>Introduktion till programmering med JavaScript</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>DT200G</td>
+                            <td>Grafisk teknik för webb</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>DT068G</td>
+                            <td>Webbanvändbarhet</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT207G</td>
+                            <td>Backend-baserad webbutveckling</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT003G</td>
+                            <td>Databaser</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>DT211G</td>
+                            <td>Frontend-baserad webbutveckling</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT208G</td>
+                            <td>Programmering i TypeScript</td>
+                            <td>B</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot> <!-- Tabellens footer -->
+                        <tr>
+                            <td colspan="3">Läsår 1</td> <!-- Tabellen innehåller kursinformation för läsår ett -->
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <table> <!-- Andra tabellen som visar kurser under andra läsåret -->
+                    <thead>
+                        <tr>
+                            <th>Kurskod</th> <!-- Rubrik för kurskoder (första kolumnen) -->
+                            <th>Kursnamn</th> <!-- Rubrik för kursnamn (andra kolumnen) -->
+                            <th>Progression</th> <!-- Rubrik för progression (tredje kolumnen) -->
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- Varje rad innehållande kursdata följer följande format: -->
+                        <tr>
+                            <td>DT071G</td> <!-- Kurskod -->
+                            <td>Programmering i C#.NET</td> <!-- Kursnamn -->
+                            <td>A</td> <!-- Progression -->
+                        </tr>
+                        <tr>
+                            <td>DT193G</td>
+                            <td>Fullstack-utveckling med ramverk</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT209G</td>
+                            <td>Webbutveckling för WordPress</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>IK060G</td>
+                            <td>Projektledning</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>DT210G</td>
+                            <td>Fördjupad frontend-utveckling</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT140G</td>
+                            <td>Självständigt arbete</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT191G</td>
+                            <td>Webbutveckling med .NET</td>
+                            <td>B</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Läsår 2</td> <!-- Tabellen innehåller kursinformation för läsår två -->
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+
+        <footer> <!-- Sidfot -->
+            <ul> <!-- Lista för sidfotens innehåll -->
+                <li><h4>DT057G</h4></li> <!-- Kurskod -->
+                <li><h5>2024-09-25</h5></li> <!-- Datum -->
+                <li><h5>Isak Ullberg</h5></li> <!-- Namn på författaren -->
+                <li><a href="mailto:isul2300@student.miun.se">isul2300@student.miun.se</a></li> <!-- Mejllänk -->
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

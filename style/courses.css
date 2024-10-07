@@ -1,0 +1,27 @@
+/* Separerar innehållet (tabellerna) med flex i kolumn.  */
+#tableContainer{
+    width: fit-content; /* Blir inte bredare än sitt innehåll */
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: #D8D2C2;
+    border: 2px #4A4947 solid;
+}
+
+table{
+    width: 100%;
+    background-color: #FAF7F0;
+    border: 2px solid black; /* Border runt hela tabellen */
+}
+
+th{
+    border: 1px solid black; /* Border runt varje cell (rubriker) */
+    text-align: left; /* Justerar texten i rubrikcellerna till vänster (som uppgiftsexemplet) */
+    padding: 0.5em; /* Ger cellerna padding för ökad läsbarhet */
+}
+
+td{
+    border: 1px solid black; /* Border runt varje cell (tabelldatacellerna) */
+    padding: 0.5em; /* Ger cellerna padding för ökad läsbarhet */
+}

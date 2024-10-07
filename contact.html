@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv"> <!-- Anger att HTML-dokumentet är skrivet på svenska -->
+<head>
+    <meta charset='utf-8'> <!-- Definierar teckenkodningen som UTF-8 -->
+    <title>Kontakt</title> <!-- Titel på sidan som visas i webbläsarens flik -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!-- Gör sidan responsiv genom att justera visningen baserat på enhetens bredd -->
+    <link rel='stylesheet' type='text/css' href='style/main.css'> <!-- Länkar till en extern CSS-fil -->
+    <link rel='stylesheet' type='text/css' href='style/contact.css'> <!-- Länkar till en extern CSS-fil -->
+</head>
+<body>
+    <div id="wrapper"> <!-- Wrapper-div för att hålla samman allt innehåll -->
+        <header> <!-- Sidhuvud -->
+            <nav> <!-- Navigationsmeny -->
+                <ul> <!-- Lista för menyns länkar -->
+                    <li>
+                        <a href="index.html">
+                            <img src="images/home.png" alt="Hemknapp"> <!-- Bildikon för hemknapp -->
+                        </a>
+                    </li>
+
+                    <li><a href="courses.html">Kurser</a></li> <!-- Länk till kurs-sidan -->
+                    <li><a href="contact.html">Kontakt</a></li> <!-- Länk till kontakt-sidan -->
+                    <li><a href="about.html">Om</a></li> <!-- Länk till om-sidan -->
+
+                    <li id="imagesButton"> <!-- Länk med dropdown för bilder -->
+                        <a href="pictures.html">Bilder</a> <!-- Länk till första bildsidan -->
+                        <ul class="dropDown"> <!-- Dropdown-meny (se CSS-dokument för funktionalitet) -->
+                            <li><a href="pictures2.html">Bilder 2</a></li> <!-- Länk till andra bildsidan -->
+                            <li><a href="pictures3.html">Bilder 3</a></li> <!-- Länk till tredje bildsidan -->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="introContainer">    
+                <h1>Kontakt</h1> <!-- Huvudrubrik -->
+                <p>Nedan kan du kontakta mig via frågeformuläret eller genom att klicka på länken längst ned på sidan för att mejla mig.</p> <!-- Introduktion till sidan -->
+            </div>
+        </header>
+
+        <main> <!-- Huvudinnehåll -->
+            <form action="contact.html"> <!-- Formulär med action som laddar om sidan och hämtar inmatningsdatan -->
+                <fieldset> <!-- Grupperar formulärets innehåll -->
+                    <legend><b>Kontaktformulär</b></legend> <!-- Fältets rubrik, görs fetstilt med b-taggar -->
+
+                    <div> <!-- Namninmatning -->
+                        <label for="nameInput">Namn: </label> <!-- Label för namninmatning -->
+                        <input type="text" placeholder="Förnamn Efternamn" name="nameInput" id="nameInput" required> <!-- Textinmatning för namn, obligatoriskt -->
+                    </div>
+
+                    <div> <!-- Mejlinmatning -->
+                        <label for="emailInput">E-postadress: </label> <!-- Label för mejlinmatning -->
+                        <input type="email" placeholder="namn@domän.se" name="emailInput" id="emailInput" required> <!-- Mejlinmatning för epostadress, obligatoriskt -->
+                    </div>
+
+                    <div> <!-- Yrkesvalsinmatning -->
+                        <label for="workInput">Yrke: </label> <!-- Label för yrkesinmatning -->
+                        <select name="workInput" id="workInput"> <!-- Dropdown-meny för yrkesval -->
+                            <option value="webbutvecklare">Webbutvecklare</option> <!-- Alternativ för Webbutvecklare -->
+                            <option value="webbdesigner">Webbdesigner</option> <!-- Alternativ för Webbdesigner -->
+                            <option value="projektledare">Projektledare</option> <!-- Alternativ för Projektledare -->
+                            <option value="grafiskdesigner">Grafisk designer</option> <!-- Alternativ för Grafisk designer -->
+                            <option value="backendutvecklare">Backend-utvecklare</option> <!-- Alternativ för Backend-utvecklare -->
+                            <option value="systemarkitekt">Systemarkitekt</option> <!-- Alternativ för Systemarkitekt -->
+                        </select>
+                    </div>
+
+                    <div> <!-- Nyhetsbrev-kryssruta -->
+                        <label for="newsletterInput">Nyhetsbrev: </label> <!-- Label för nyhetsbrevsinmatning -->
+                        <input type="checkbox" name="newsletterInput" id="newsletterInput"> <!-- Checkbox-inmatning prenumeration på nyhetsbrev -->
+                    </div>
+
+                    <div> <!-- Radioknappar för anställningsstatus -->
+                        <label for="employedInput">Anställd: </label> <!-- Label för anställningstatusinmatning -->
+
+                        <input type="radio" value="Ja" name="employmentInput" id="employedInput" checked> <!-- Radioknapp för "Ja", vald som standard -->
+                        <label for="employedInput">Ja</label> <!-- Label för radioknapp "Ja" -->
+
+                        <input type="radio" value="Nej" name="employmentInput" id="unemployedInput"> <!-- Radioknapp för "Nej" -->
+                        <label for="unemployedInput">Nej</label> <!-- Label för radioknapp "Nej" -->
+                    </div>
+
+                    <label for="messageInput">Meddelande:</label> <!-- Label för meddelandeinmatning -->
+                    <textarea name="messageInput" placeholder="Meddelande skrivs här..." id="messageInput" required></textarea> <!-- Textområde för meddelande, obligatoriskt -->
+
+                    <div> <!-- Knappar för att skicka och återställa formuläret -->
+                        <input type="submit" value="Skicka" class="inputButton"> <!-- Skickaknapp -->
+                        <input type="reset" value="Nollställ" class="inputButton"> <!-- Nollställninsknapp -->
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer> <!-- Sidfot -->
+            <ul> <!-- Lista med sifotens innehåll -->
+                <li><h4>DT057G</h4></li> <!-- Kurskod -->
+                <li><h5>2024-09-25</h5></li> <!-- Datum -->
+                <li><h5>Isak Ullberg</h5></li> <!-- Namn på författaren -->
+                <li><a href="mailto:isul2300@student.miun.se">isul2300@student.miun.se</a></li> <!-- Mejllänk -->
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

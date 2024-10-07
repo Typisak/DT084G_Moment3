@@ -1,0 +1,27 @@
+
+#wrapper{
+    max-width: 1000px; /* Begränsar sidans bredd till maximalt 1000px, blir annars oläsbar */
+}
+
+main{
+    padding: 1em;
+    display: flex; /* Flex för att separera innehåll */
+    flex-direction: column; /* Ändrar riktning på flex till kolumn */
+    gap: 1em; /* Skapar 1em avstånd mellan elementen i main */
+    background-color: #D8D2C2;
+    border: 2px #4A4947 solid;
+}
+
+#textContainer{
+    padding: 1em;
+    display: flex; /* Flex för att separera innehåll */
+    flex-direction: column; /* Ändrar riktning på flex till kolumn */
+    gap: 1em; /* Skapar 1em avstånd mellan elementen i textContainer */
+    background-color: #FAF7F0;
+    border: 2px black solid;
+}
+
+main img{
+    max-width: fit-content; /* Anpassar bildens storlek till dess innehåll, stretchar annars till mains bredd */
+    border: 2px black solid;
+}

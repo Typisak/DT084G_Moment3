@@ -1,0 +1,47 @@
+/* Delar på navigationsmeny och bildcollage med flexbox */
+main{
+    display: flex; 
+    gap: 2em;
+}
+
+/* Försöker fylla ut till 30% bredd men håller sig inom ett angivet spann */
+main img{
+    width: 30%;
+    height: fit-content; /* Förhindrar stretchning av bild */
+    min-width: 250px; /* Begränsar bildernas storlek till minst 250 pixlar */
+    max-width: 500px; /* Begränsar bildernas storlek till högst 500 pixlar */
+    border: 2px black solid;
+}
+
+/* Förhindrar att navigationsmenyn blir större på höjden än nödvändigt */
+#pictureNav{
+    height: fit-content;
+    padding: 1em;
+    border: 2px solid #4A4947;
+    background-color: #D8D2C2;
+}
+
+#pictureNav ul{
+    width: max-content; /* Förhindrar att knapptexter wrappar */
+    display: flex; /* Flex för att nyttja gap */
+    gap: 2em; /* Separerar elementen för läsbarhet och enklare navigation. */
+    flex-direction: column; /* Ordnas vertikalt */
+}
+
+/* Gör navigationslänkarna till block för att manipulera storlekar etc. */
+#pictureNav a{
+    display: block;
+    padding: 1em;
+    border: 2px black solid;
+}
+
+/* Nyttjar flex för att separera bilder i bildcollage. Använder flex-wrap för att föhindra overflow */
+#imageContainer{
+    padding: 1em;
+    border: 2px solid #4A4947;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+    background-color: #D8D2C2;
+}

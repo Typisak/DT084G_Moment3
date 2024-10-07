@@ -1,0 +1,62 @@
+/* Ger formulär utseende */
+form{
+    width: fit-content; /* Blir inte bredare än innehåll */
+    padding: 1em;
+    border: 2px #4A4947 solid;
+    background-color: #D8D2C2;
+}
+
+fieldset {
+    max-width: fit-content; /* Sätter fältets maxbredd till innehållets storlek */
+    display: flex; /* Använder flexbox för att organisera innehållet */
+    flex-direction: column; /* Ordnar flexbox-elementen i en kolumn */
+    padding: 1em; /* Lägger till 1em padding runt innehållet */
+    gap: 1em; /* Skapar ett mellanrum på 1em mellan elementen */
+    border: 2px black solid;
+    background-color: #FAF7F0;
+}
+
+/* Flertalet element i formuläret ärver inte teckensnitt och storlek som standard. 
+Därför anges att de ska ärva (i det här fallet från body) */
+input{
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.2em;
+    border: 2px black solid;
+}
+
+/* Ger dropdown-menyn sitt utseende */
+select{
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.2em;
+    border: 2px black solid;
+}
+
+
+/* Gör checkbox större */
+#newsletterInput{
+    width: 1.3em;
+    height: 1.3em;
+}
+
+/* Ger textarea sitt utseende */
+textarea{
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.2em;
+    border: 2px black solid;
+}
+
+/* Ger formulärknappar sitt utseende */
+.inputButton{
+    background-color: #4A4947;
+    color: white;
+    border: 2px black solid;
+    padding: 0.5em;
+}
+
+/* Vid aktivering (klick eller nedhållning) blir knapparna ljusare */
+.inputButton:active{
+    filter: brightness(140%);
+}
