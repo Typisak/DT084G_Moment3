@@ -8,13 +8,13 @@ Utöver det lokala har jag även lärt mig hur man använder git för att använ
 
 ## Projektinnehåll
 ### HTML-dokument
-* [index.html](../blob/main/index.html)
-* [courses.html](/blob/main/courses.html)
-* [contact.html](/blob/main/contact.html)
-* [about.html](/blob/main/about.html)
-* [pictures.html](/blob/main/pictures.html)
-* [pictures2.html](/blob/main/pictures2.html)
-* [pictures3.html](/blob/main/pictures3.html)
+* [index.html](../main/index.html)
+* [courses.html](../main/courses.html)
+* [contact.html](../main/contact.html)
+* [about.html](../main/about.html)
+* [pictures.html](../main/pictures.html)
+* [pictures2.html](../main/pictures2.html)
+* [pictures3.html](../main/pictures3.html)
 
 ### CSS-dokument
 
